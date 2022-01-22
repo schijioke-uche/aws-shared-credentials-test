@@ -12,6 +12,8 @@ This test will test four distinct parts:
 2. Thats User setup the terraform correctly. 
 3. That User has the administrative access to create S3.
 4. That User can initiate AWS access within the intended environment.
+ ## AWS Configure Security Best Practice
+ Although in the settings of AWS configure or in your corporate scripts, the keys and token can be stored in the "config" file, but for security reasons in the IT industry, AWS recommend that you store this in the "credentials" file. You receive this values as part of the temporary credentials returned by successful requests to assume a role. [See AWS Security best practice in configuring the AWS access keys, aws secret keys, and aws session token:](https://docs.aws.amazon.com/sdkref/latest/guide/setting-global-aws_session_token.html) . Therefore, this test is based on AWS security best practices and the IT industry security best practices adopted by IEEE.
 
 ## AWS Provider block expected on the root module.
 ```bash
@@ -35,8 +37,10 @@ This test will test four distinct parts:
    Initiate your AWS Account session: either by running 
    a. aws configure,
    b. aws configure sso, or 
-   b. running your own corporate configured script for STS initiation.
+   c. running your own corporate configured script for STS initiation.
+   And then, locate aws_access_key, aws_secret_key,and aws_session_token in ~/.aws/credentials
 ```
+
 2. Step-2: Edit these two files
 ```bash
    a. Open test.tfvars file and add: aws_access_key, aws_secret_key,and aws_session_token
