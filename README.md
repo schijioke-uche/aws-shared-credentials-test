@@ -27,13 +27,15 @@ This test will test four distinct parts:
     aws_access_key_id = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     aws_secret_access_key = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     aws_session_token = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-}
 ```
 
 ## Testing Steps
 1. Step-1: Initiate.
 ```bash
-   Initiate your AWS Account session: either by running aws configure, aws configure sso or running your own configure script.
+   Initiate your AWS Account session: either by running 
+   a. aws configure,
+   b. aws configure sso, or 
+   b. running your own corporate configured script for STS initiation.
 ```
 2. Step-2: Run the test. 
 ```bash
