@@ -40,7 +40,7 @@ This test will test four distinct parts:
 2. Step-2: Edit these two files
 ```bash
    a. Open test.tfvars file and add: aws_access_key, aws_secret_key,and aws_session_token
-   b. Open variable.tf and add add: aws_access_key, aws_secret_key,and aws_session_token
+   b. Open variable.tf file and add add: aws_access_key, aws_secret_key,and aws_session_token
 ```
 3. Step-2: Run the test. 
 ```bash
