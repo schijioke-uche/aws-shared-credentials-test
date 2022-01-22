@@ -4,7 +4,7 @@ This code snippet is to test AWS Provider Shared Credential using terraform whic
 AWS provider block in infrastructure as Code innovation introduces consistent APIs access state for managing the end-to-end lifecycle of AWS resources. Hundreds of AWS resources are supported on Cloud Control API, which continues to keep adding support for new AWS to resources. And when I say resources or resource type, I mean a resource type essentially, that has a set of properties and permissions that Control API interactions with underlying AWS or third-party services; such as S3, EC2, er al. 
 
 ## Why this AWS Provider Shared Credentials Test?
-This is important because it is easy for user not to have access to the targeted AWS account because of some corporate policy but attention will not be paid to the access issue rather attention will be on the project in general. This accessibility test will help to solve the AWS account access issues when user is using Shared Credentials that comprise: aws_access_key, aws_secret_ket, and aws_session_toke.  
+This is important because it is easy for user not to have access to the targeted AWS account because of some corporate policy but attention will not be paid to the access issue rather attention will be on the project in general. This accessibility test will help to solve the AWS account access issues when user is using Shared Credentials that includes: aws_access_key, aws_secret_ket, and aws_session_token.  
 
 This test will test four distinct parts:
 
