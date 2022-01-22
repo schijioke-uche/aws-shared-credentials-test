@@ -8,10 +8,10 @@ This is important because it is easy for user not to have access to the targeted
 
 This test will test four distinct parts:
 
-1. That User has AWS access. 
-2. Thats User setup the terraform correctly. 
-3. That User has the administrative access to create S3.
-4. That User can initiate AWS access within the intended environment.
+1. That User has AWS access from the tools machine. 
+2. Thats User setup the terraform correctly within the tools machine. 
+3. That User has the ability to create S3 bucket within the intendeds AWS account.
+4. That User can initiate AWS account STS within the environment that will deploy AWS resources.
  ## AWS Configure Security Best Practice
  Although in the settings of AWS configure or in your corporate scripts, the keys and token can be stored in the "config" file, but for security reasons in the IT industry, AWS recommend that you store this in the "credentials" file. You receive this values as part of the temporary credentials returned by successful requests to assume a role. [See AWS Security best practice in configuring the AWS access keys, aws secret keys, and aws session token:](https://docs.aws.amazon.com/sdkref/latest/guide/setting-global-aws_session_token.html) . Therefore, this test is based on AWS security best practices and the IT industry security best practices adopted by IEEE.
 
@@ -34,10 +34,12 @@ This test will test four distinct parts:
 ## Testing Steps
 1. Step-1: Initiate.
 ```bash
-   Initiate your AWS Account session: either by running 
-   a. aws configure,
-   b. aws configure sso, or 
-   c. running your own corporate configured script for STS initiation.
+   a. git clone https://github.com/schijioke-uche/aws-terraform-shared-access-test.git
+   b. cd aws-terraform-shared-access-test
+   c. Initiate your AWS Account session: either by running: 
+        i. aws configure,
+        ii. aws configure sso, or 
+        iii. running your own corporate configured script for AWS STS initiation.
    And then, locate aws_access_key, aws_secret_key,and aws_session_token in ~/.aws/credentials
 ```
 
