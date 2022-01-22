@@ -46,7 +46,7 @@ This test will test four distinct parts:
    a. Open test.tfvars file and add: aws_access_key, aws_secret_key,and aws_session_token
    b. Open variable.tf file and add add: aws_access_key, aws_secret_key,and aws_session_token
 ```
-3. Step-2: Run the test. 
+3. Step-3: Run the test. 
 ```bash
    bash test-create.sh
 ```
@@ -60,7 +60,7 @@ If create is successful, you will see similar output below:
 
     Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
 ```
-4. Step-3: Destroy the created test s3. 
+4. Step-4: Destroy the created test s3. 
 ```bash
    bash test-destroy.sh
 ```
