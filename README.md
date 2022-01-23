@@ -34,7 +34,7 @@ This test will test four distinct parts:
 ## Testing Steps
 1. Step-1: Initiate.
 ```bash
-   a. git clone https://github.com/schijioke-uche/aws-terraform-shared-access-test.git
+   a. git clone https://github.com/schijioke-uche/aws-shared-credentials-test.git
    b. cd aws-terraform-shared-access-test
    c. Initiate your AWS Account session: either by running: 
         i. aws configure,
