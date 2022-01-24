@@ -9,7 +9,7 @@ This is important because it is easy for user not to have access to the targeted
 This test will test four distinct parts:
 
 1. That User has AWS access from the tools machine. 
-2. Thats User setup the terraform correctly within the tools machine. 
+2. That User setup the terraform correctly within the tools machine. 
 3. That User has the ability to create S3 bucket within the intended AWS account.
 4. That User can initiate AWS account STS within the environment that will deploy AWS resources.
  ## AWS Configure Security Best Practice
