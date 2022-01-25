@@ -34,7 +34,7 @@ This code snippet will test four distinct parts within the tools machine:
 ## Testing Steps
 1. Step-1: Initiate.
 ```bash
-   a. Login to the Tools Machine (AWS EC2, Ubuntu, CentOS, or to any Linux machine where the tools were setup).
+   a. Login to the Tools Machine (AWS EC2, Ubuntu, or to any Linux machine where the tools were setup).
    b. git clone https://github.com/schijioke-uche/aws-shared-credentials-test.git
    c. cd aws-terraform-shared-access-test
    d. Initiate your AWS Account session: either by running: 
