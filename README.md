@@ -46,8 +46,8 @@ This code snippet will test four distinct parts within the tools machine:
 
 2. Step-2: Edit these two files
 ```bash
-   a. Edit "test.tfvars" file: add values for aws_access_key_id, aws_secret_access_key, and aws_session_token
-   b. Edit "variable.tf" file: add values for aws_access_key_id, aws_secret_access_key, and aws_session_token
+   a. Edit "test.tfvars" : add values for aws_access_key_id, aws_secret_access_key, and aws_session_token
+   b. Edit "variable.tf" : add values for aws_access_key_id, aws_secret_access_key, and aws_session_token
 ```
 3. Step-3: Run the test. 
 ```bash
