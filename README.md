@@ -40,7 +40,7 @@ This code snippet will test four distinct parts within the tools machine:
         i. aws configure,
         ii. aws configure sso, or 
         iii. running your own corporate configured script for AWS STS initiation.
-   And then, locate aws_access_key, aws_secret_key,and aws_session_token in ~/.aws/credentials
+   Then, locate aws_access_key_id, aws_secret_access_key,and aws_session_token in ~/.aws/credentials
 ```
 
 2. Step-2: Edit these two files
