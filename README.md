@@ -36,8 +36,7 @@ This code snippet will test four distinct parts within the tools machine:
 ```bash
    a. Login to the Tools Machine (AWS EC2, Ubuntu, or to any Linux machine where the tools were setup).
    b. git clone https://github.com/schijioke-uche/aws-shared-credentials-test.git
-   c. cd aws-shared-credentials-test
-   d. Initiate your AWS Account session: either by running: 
+   c. initialize your AWS Account session credentials: either by running: 
         i. aws configure,
         ii. aws configure sso, or 
         iii. running your own corporate configured script for AWS STS initiation.
@@ -46,8 +45,9 @@ This code snippet will test four distinct parts within the tools machine:
 
 2. Step-2: Edit these two files
 ```bash
-   a. Edit "test.tfvars" : add values for aws_access_key_id, aws_secret_access_key, and aws_session_token
-   b. Edit "variable.tf" : add values for aws_access_key_id, aws_secret_access_key, and aws_session_token
+   a. cd aws-shared-credentials-test
+   b. Edit "test.tfvars" : add values for aws_access_key_id, aws_secret_access_key, and aws_session_token
+   c. Edit "variable.tf" : add values for aws_access_key_id, aws_secret_access_key, and aws_session_token
 ```
 3. Step-3: Run the test. 
 ```bash
