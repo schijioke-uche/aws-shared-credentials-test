@@ -1,16 +1,16 @@
-variable "aws_access_key" {
+variable "aws_access_key_id" {
      type        = string
-     description = "AWS access key for the AWS account.(User should supply for the test)"
+     description = "AWS access key for the AWS account.(User should supply value for the test)"
      default = ""
 }
-variable "aws_secret_key" {
+variable "aws_secret_access_key" {
     type        = string
-    description = "AWS Secret key for the AWS account.(User should supply for the test)"
+    description = "AWS Secret key for the AWS account.(User should supply value for the test)"
     default = ""
  }
 variable "aws_session_token" {
   type        = string
-  description = "AWS Session token for the AWS account.(User should supply for the test)"
+  description = "AWS Session token for the AWS account.(User should supply value for the test)"
   default     = ""
 }
  variable "aws_profile" {
