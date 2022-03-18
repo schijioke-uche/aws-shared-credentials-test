@@ -8,6 +8,7 @@ variable "aws_secret_access_key" {
     description = "AWS Secret key for the AWS account.(User should supply value for the test)"
     default = ""
  }
+
  variable "aws_profile" {
      type        = string
      description = "DO NOT CHANGE"
@@ -27,10 +28,4 @@ variable "region" {
        type        = string
        description = "DO NOT CHANGE"
        default = "aws-test-bucket-"
- }
-
-  variable "acl_value" {
-       type        = string
-       description = "DO NOT CHANGE"
-       default = "private"
  }

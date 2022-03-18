@@ -14,16 +14,21 @@ resource "random_id" "buc" {
 }
 
 
-resource "aws_s3_bucket" "buc" {
+resource "aws_s3_bucket" "b" {
   bucket = "test-s3-${random_id.buc.hex}"
+}
+
+resource "aws_s3_bucket_acl" "example" {
+  bucket = aws_s3_bucket.example.id
+  acl    = "private"
+}
+
+resource "aws_s3_bucket_acl" "buc" {
+bucket = "test-s3-${random_id.buc.hex}"
+  acl    = "pivate"
 
   tags = {
     Name        = "Test S3 Purpose"
     Environment = "Testing My AWS Access"
   }
-}
-
-resource "aws_s3_bucket_acl" "buc" {
-  bucket = aws_s3_bucket.buc.id
-  acl    = "private"
 }

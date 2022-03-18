@@ -28,9 +28,3 @@ variable "region" {
        description = "DO NOT CHANGE"
        default = "aws-test-bucket-"
  }
-
-  variable "acl_value" {
-       type        = string
-       description = "DO NOT CHANGE"
-       default = "private"
- }
