@@ -55,7 +55,7 @@ OR, if SSO
    Locate it in ~/.aws/sso
 ```
 
-2. Step-2: Edit these two files
+2. Step-2: Edit this file
 ```bash
    a. cd aws-shared-credentials-test
    b. Edit "test.tfvars" : add values for aws_access_key, aws_secret_key, aws_region;  and (if SSO, you may add aws_token value)
