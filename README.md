@@ -54,7 +54,7 @@ OR, if SSO
 
    OR, if SSO
 
-   Locate it in ~/.aws/sso
+   Locate it in ~/.aws/SSO/cache/*somename*.json
 ```
 
 2. Step-2: Edit this file
