@@ -1,7 +1,24 @@
+/*  Depricated - March 2022
 provider "aws" {
   region  = var.region
   shared_credentials_file = var.aws_shared_credentials_file
   profile  = var.aws_profile
+}
+*/
+
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.5"
+    }
+  }
+}
+provider "aws" {
+  region  = var.aws_region
+  shared_config_files      = [var.aws_shared_config_file]
+  shared_credentials_files = [var.aws_shared_credentials_file]
+  profile                  = var.aws_profile
 }
 
 resource "random_id" "buc" {

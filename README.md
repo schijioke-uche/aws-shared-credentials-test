@@ -18,17 +18,24 @@ This code snippet will test four distinct parts within the tools machine:
 ## AWS Provider block expected on the root module.
 ```bash
   provider "aws" {
-    region  = var.region
-    shared_credentials_file = var.aws_shared_credentials_file
-    profile  = var.aws_profile
+  region = var.region
+  shared_config_files  = [var.aws_shared_config_file]
+  shared_credentials_files = [var.aws_shared_credentials_file]
+  profile  = var.aws_profile
 }
 ```
 ## AWS Keys & Token expected in "~/.aws/credentials"
 ```bash
     [default]
-    aws_access_key_id = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-    aws_secret_access_key = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-    aws_session_token = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    aws_access_key = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    aws_secret_key = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    
+OR, if SSO
+
+    [yourcustomprofile]
+    aws_access_key = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    aws_secret_key = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    aws_access_token = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
 ## Testing Steps
@@ -40,14 +47,18 @@ This code snippet will test four distinct parts within the tools machine:
         i. aws configure,
         ii. aws configure sso, or 
         iii. running your own corporate configured script for AWS STS initiation.
-   Then, locate aws_access_key_id, aws_secret_access_key,and aws_session_token in ~/.aws/credentials
+   Locate aws_access_key & aws_secret_key in ~/.aws/credentials
+   Run this to view it: cat ~/.aws/credentials
+
+   OR, if SSO
+
+   Locate it in ~/.aws/sso
 ```
 
 2. Step-2: Edit these two files
 ```bash
    a. cd aws-shared-credentials-test
-   b. Edit "test.tfvars" : add values for aws_access_key_id, aws_secret_access_key, and aws_session_token
-   c. Edit "variable.tf" : add values for aws_access_key_id, aws_secret_access_key, and aws_session_token
+   b. Edit "test.tfvars" : add values for aws_access_key, aws_secret_key, aws_region;  and (if SSO, you may add aws_token value)
 ```
 3. Step-3: Run the test. 
 ```bash
