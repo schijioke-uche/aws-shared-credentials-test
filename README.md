@@ -60,7 +60,7 @@ OR, if SSO
 2. Step-2: Edit this file
 ```bash
    a. cd aws-shared-credentials-test
-   b. Edit "test.tfvars" : add values for aws_access_key, aws_secret_key, aws_region;  and (if SSO, you may add aws_token value)
+   b. Edit "test.tfvars" : add values for aws_region, aws_profile, [AND OR] aws_access_key, aws_secret_key (if SSO, you may add aws_token value).
 ```
 3. Step-3: Run the test. 
 ```bash
