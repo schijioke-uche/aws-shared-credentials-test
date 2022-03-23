@@ -18,7 +18,7 @@ This code snippet will test four distinct parts within the tools machine:
 ## AWS Provider block expected on the root module.
 ```bash
   provider "aws" {
-  region = var.region
+  region = var.aws_region
   shared_config_files  = [var.aws_shared_config_file]
   shared_credentials_files = [var.aws_shared_credentials_file]
   profile  = var.aws_profile
