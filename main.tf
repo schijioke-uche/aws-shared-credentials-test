@@ -1,4 +1,4 @@
-/*  Depricated - March 2022
+/*  Deprecated - March 2022
 provider "aws" {
   region  = var.region
   shared_credentials_file = var.aws_shared_credentials_file
