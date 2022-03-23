@@ -36,6 +36,8 @@ OR, if SSO
     aws_access_key = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     aws_secret_key = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     aws_access_token = xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+    Note that, if SSO: where to find accessToken is in ~/.aws/SSO/cache/*somename*.json
 ```
 
 ## Testing Steps
