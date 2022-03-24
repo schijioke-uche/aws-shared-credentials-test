@@ -10,8 +10,7 @@
 
 #REQUIRED   |  Default profile is:  "default"
 #---------------------------------------------------------------------------
-aws_profile  = ""
-aws_region  = ""
+aws_profile  = "AdministratorAccess-275456890076"
 aws_shared_config_file  = "~/.aws/config"
 aws_shared_credentials_file  = "~/.aws/credentials"
 #----------------------------------------------------------------------------

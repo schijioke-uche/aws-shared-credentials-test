@@ -18,7 +18,6 @@ This code snippet will test four distinct parts within the tools machine:
 ## AWS Provider block expected on the root module.
 ```bash
   provider "aws" {
-  region = var.aws_region
   shared_config_files  = [var.aws_shared_config_file]
   shared_credentials_files = [var.aws_shared_credentials_file]
   profile  = var.aws_profile
@@ -60,7 +59,7 @@ OR, if SSO
 2. Step-2: Edit this file
 ```bash
    a. cd aws-shared-credentials-test
-   b. Edit "test.tfvars" : add values for aws_region, aws_profile, [AND OR] aws_access_key, aws_secret_key (if SSO, you may add aws_token value).
+   b. Edit "test.tfvars" : add values for aws_profile, [AND OR] aws_access_key, aws_secret_key (if SSO, you may add aws_token value).
 ```
 3. Step-3: Run the test. 
 ```bash
