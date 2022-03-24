@@ -5,3 +5,4 @@ terraform.tfstate
 terraform.tfstate.backup
 .history
 .note.txt
+check.sh
